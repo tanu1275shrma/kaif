@@ -3,8 +3,8 @@ import React from "react";
 const Hero = () => {
   return (
     <section
-      className="bg-[#062E33] text-white flex flex-col-reverse lg:flex-row items-center justify-center px-6 lg:px-16 py-10 lg:py-4
-     min-h-screen overflow-hidden gap-6 lg:gap-12"
+      className="bg-[#062E33] text-white flex flex-col-reverse lg:flex-row items-center justify-center px-6 lg:px-20 py-10 lg:py-0
+  min-h-screen overflow-hidden gap-6 lg:gap-16"
     >
       {/* LEFT SIDE */}
       <div className="w-full lg:w-1/2 text-center flex flex-col justify-center items-center">

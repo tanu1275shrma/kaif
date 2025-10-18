@@ -81,17 +81,4 @@ const Hero = () => {
   );
 };
 
-// Custom Animation
-const style = document.createElement("style");
-style.innerHTML = `
-  @keyframes bounce-slow {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-8px); }
-  }
-  .animate-bounce-slow {
-    animation: bounce-slow 1.8s infinite;
-  }
-`;
-document.head.appendChild(style);
-
 export default Hero;

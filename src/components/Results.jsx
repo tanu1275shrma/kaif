@@ -30,11 +30,11 @@ const Results = () => {
       }}
     >
       {/* Headings */}
-      <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
-        Proven Results from Our Mentors
+      <h2 className="text-3xl md:text-4xl font-bold text-emerald-900 mb-3">
+        Students <span className="text-red-700 ">Success</span> Dashboard
       </h2>
       <p className="text-emerald-700 text-lg font-semibold mb-12">
-        See the Numbers: Our Mentors' E-commerce Dashboards
+        From Zero to 7 Figures — Students Dreams to Reality Dashboard
       </p>
 
       {/* Dashboard Grid */}
@@ -59,10 +59,11 @@ const Results = () => {
         ))}
       </div>
 
-      {/* Main CTA Button */}
-      <button className="bg-emerald-700 hover:bg-emerald-500 text-white font-semibold px-8 py-3 rounded-full shadow-md transition-transform hover:-translate-y-0.5">
-        Yes, I Want Results like this🚀
-      </button>
+      <div className="text-center mt-12">
+        <button className="bg-emerald-700 text-gray-100 border-2 border-white px-8 py-4 rounded-full font-semibold text-lg transition animate-bounce">
+          Yes! I want Results
+        </button>
+      </div>
     </section>
   );
 };

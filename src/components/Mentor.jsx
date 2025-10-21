@@ -44,9 +44,11 @@ const Mentor = () => {
             <span className="text-yellow-400">zero</span>.
           </p>
 
-          <button className="bg-yellow-400 text-green-950 font-semibold px-6 py-3 rounded-full shadow-md transition-transform hover:-translate-y-0.5">
-            Learn From The Expert
-          </button>
+          <div className="text-center mt-12">
+            <button className="bg-gray-100 text-emerald-700 border-2 border-white px-8 py-4 rounded-full font-semibold text-lg transition animate-bounce">
+              Let's Connect Now!
+            </button>
+          </div>
         </div>
       </div>
     </section>

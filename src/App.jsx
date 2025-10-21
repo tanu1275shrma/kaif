@@ -8,6 +8,8 @@ import Results from "./components/Results";
 import FAQ from "./components/FAQ";
 import Footer from "./components/Footer";
 import ScrollBanner from "./components/ScrollBanner";
+import Challenges from "./components/Challenges";
+import Join from "./components/Join";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
       <ScrollBanner />
       <Learn />
       <Stages />
+      <Challenges />
+      <Join />
       <Regret />
       <Mentor />
       <Results />

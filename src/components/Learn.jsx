@@ -92,7 +92,7 @@ const Learn = () => {
 
       <div className="text-center mt-12">
         <button className="bg-emerald-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition animate-bounce">
-          Claim Your Free Spot Now!
+          Enroll Now!
         </button>
       </div>
     </section>

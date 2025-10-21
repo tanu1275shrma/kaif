@@ -44,16 +44,17 @@ const Hero = () => {
           </h3>
         </div>
 
-        {/* DETAILS */}
-        <div className="mt-2 flex flex-wrap justify-center lg:justify-start gap-4">
+        {/* DETAILS — 2x2 GRID */}
+        <div className="mt-2 grid grid-cols-2 gap-4 w-full max-w-xs sm:max-w-md md:max-w-lg place-items-center">
           {[
             { label: "DATE", value: "20th Oct" },
             { label: "TIME", value: "8:00 PM" },
             { label: "PLATFORM", value: "Zoom" },
+            { label: "LANGUAGE", value: "English | Hindi" },
           ].map((item, i) => (
             <div
               key={i}
-              className="bg-[#0B3C41] border border-yellow-400/70 rounded-xl py-3 px-6 text-center w-[110px] md:w-36 shadow-lg
+              className="bg-[#0B3C41] border border-yellow-400/70 rounded-xl py-2 px-2 text-center w-full shadow-lg
               transition-all duration-300 
               md:hover:shadow-[0_0_15px_#FFD700]
               shadow-[0_0_15px_#FFD700] md:shadow-none

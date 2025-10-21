@@ -18,6 +18,8 @@ const stagesData = [
       "Build a stunning, high-converting store in hours.",
       "Set up automation so your store runs smoothly.",
       "Use simple tools that make launching effortless.",
+      "We create a Premium Shopify store for you.",
+      "No extra costs — everything you need is included.",
     ],
   },
   {
@@ -27,6 +29,7 @@ const stagesData = [
       "Run smart ads that bring consistent daily sales.",
       "Turn one-time buyers into repeat loyal customers.",
       "Scale confidently with tested, repeatable strategies.",
+      "Earn even while you sleep — your store never stops working.",
     ],
   },
 ];

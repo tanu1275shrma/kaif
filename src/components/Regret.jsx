@@ -58,6 +58,13 @@ const Regret = () => {
                   your “perfect start.”
                 </span>
               </li>
+              <li className="flex items-start">
+                <XCircle className="text-red-500 w-4 h-4 sm:w-5 sm:h-5 mt-1 mr-2 shrink-0" />
+                <span>
+                  And the worst part? For just ₹49, you’ll lose access to the
+                  roadmap that could’ve built your freedom.
+                </span>
+              </li>
             </ul>
           </div>
 
@@ -84,15 +91,22 @@ const Regret = () => {
               <li className="flex items-start">
                 <CheckCircle className="text-emerald-500 w-4 h-4 sm:w-5 sm:h-5 mt-1 mr-2 shrink-0" />
                 <span>
-                  Understand the ads that actually convert — not just bring
-                  clicks.
+                  See how our past attendees are now earning real profits —
+                  because they learned exactly what to do, and what to avoid.
                 </span>
               </li>
               <li className="flex items-start">
                 <CheckCircle className="text-emerald-500 w-4 h-4 sm:w-5 sm:h-5 mt-1 mr-2 shrink-0" />
                 <span>
-                  Build your store with guidance from experts who’ve already
-                  done it successfully.
+                  Find Out what’s been stopping your dropshipping success.
+                </span>
+              </li>
+
+              <li className="flex items-start">
+                <CheckCircle className="text-emerald-500 w-4 h-4 sm:w-5 sm:h-5 mt-1 mr-2 shrink-0" />
+                <span>
+                  Understand the ads that actually convert — not just bring
+                  clicks.
                 </span>
               </li>
             </ul>
@@ -109,9 +123,11 @@ const Regret = () => {
               👉 Enroll now and make your “someday” happen today.
             </span>
           </p>
-          <button className="bg-emerald-700 text-white font-semibold px-5 sm:px-6 py-2 sm:py-3 rounded-full text-sm sm:text-base shadow-md transition-all hover:scale-105">
-            Secure Your Spot Now!
-          </button>
+          <div className="text-center mt-12">
+            <button className="bg-emerald-700 text-gray-100 border-2 border-white px-8 py-4 rounded-full font-semibold text-lg transition animate-bounce">
+              Yes! Reserve my Spot
+            </button>
+          </div>
         </div>
       </div>
     </section>

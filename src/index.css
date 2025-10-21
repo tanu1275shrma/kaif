@@ -12,3 +12,40 @@
 .animate-bounce-slow {
   animation: bounce-slow 1.8s infinite;
 }
+@keyframes arcRed {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+}
+
+@keyframes arcRed {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(10deg); /* moves horizontally to the right */
+  }
+}
+
+@keyframes arcGreen {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg); /* moves horizontally to the left */
+  }
+}
+
+.animate-arc-red {
+  animation: arcRed 3s ease-in-out infinite;
+}
+
+.animate-arc-green {
+  animation: arcGreen 3s ease-in-out infinite;
+}

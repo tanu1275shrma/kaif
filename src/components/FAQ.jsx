@@ -8,6 +8,11 @@ const faqs = [
       "A great dropshipper understands market demand, builds strong supplier relationships, and leverages automation to scale effortlessly.",
   },
   {
+    question: "How is this different from free YouTube videos?",
+    answer:
+      "YouTube shows pieces. This webinar gives you the complete roadmap — tested, proven, and designed to actually get results.",
+  },
+  {
     question: "Do I need prior experience to start dropshipping?",
     answer:
       "No! Dropshipping is beginner-friendly. You can learn step-by-step strategies to build your first profitable store even if you’re new.",
@@ -23,9 +28,19 @@ const faqs = [
       "Yes, you can start part-time and scale it into a full-time business once your systems are in place and revenue becomes consistent.",
   },
   {
+    question: "Will I get any support after the webinar?",
+    answer:
+      "Yes! You’ll get access to a community and resources to help you take your next steps confidently.",
+  },
+  {
     question: "Will this webinar help me find winning products?",
     answer:
       "Absolutely! You’ll learn proven product research frameworks used by 7-figure sellers to identify high-demand, low-competition items.",
+  },
+  {
+    question: "Is this really possible for me?",
+    answer:
+      "If you can follow simple steps and stay consistent — yes, 100%. This system has already worked for hundreds of beginners just like you.",
   },
 ];
 
@@ -45,7 +60,7 @@ const Footer = () => {
         </h2>
 
         {/* FAQ List */}
-        <div className="space-y-3">
+        <div className="space-y-2">
           {faqs.map((faq, index) => (
             <div
               key={index}
@@ -57,7 +72,7 @@ const Footer = () => {
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className={`w-full flex justify-between items-center px-6 py-5 font-semibold text-left text-lg transition-all ${
+                className={`w-full flex justify-between items-center px-6 py-2 font-semibold text-left text-lg transition-all ${
                   activeIndex === index
                     ? "bg-yellow-400"
                     : "hover:bg-yellow-400"

@@ -13,7 +13,7 @@ const Mentor = () => {
         {/* Left: Image */}
         <div className="flex justify-center">
           <img
-            src="/images/Nilji.png"
+            src="/images/hero.png"
             alt="Mentor"
             className="rounded-3xl w-[220px] border border-yellow-400 md:w-[320px] lg:w-[480px] object-cover shadow-lg"
           />
@@ -22,22 +22,22 @@ const Mentor = () => {
         {/* Right: Text Section */}
         <div className="flex flex-col items-center text-center md:items-center">
           <h3 className="text-yellow-400 text-2xl md:text-3xl font-semibold mb-1">
-            Kaif
+            Kaif Fahad
           </h3>
           <p className="text-gray-100 font-medium mb-2">
             The E-commerce Growth Expert
           </p>
 
           {/* Green Line Centered */}
-          <div className="h-1 w-16 bg-emerald-500 mb-4 rounded-full"></div>
+          <div className="h-1 w-16 bg-yellow-400 mb-4 rounded-full"></div>
 
           <p className="text-gray-100 text-sm md:text-base leading-relaxed mb-6 max-w-md">
-            Hi, I’m<span className="text-white">Kaif</span> , a{" "}
+            Hi, I’m <span className="text-white">Kaif</span> , a{" "}
             <span className="text-yellow-400">
-              7-figure eCommerce entrepreneur
+              7-figure E-Commerce entrepreneur
             </span>{" "}
-            dropshipping coach. Over the past 5 years, I’ve helped
-            <span className="text-amber-100">10,000+</span> students launch
+            dropshipping coach. Over the past 5 years, I’ve helped more than
+            <span className="text-yellow-400">10,000+</span> students launch
             profitable online stores using my proven systems. I’ll teach you how
             to find winning products, build converting stores, and scale
             effortlessly with automation — even if you’re starting from{" "}

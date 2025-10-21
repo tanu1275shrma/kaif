@@ -4,24 +4,24 @@ import { CheckCircle } from "lucide-react";
 const Learn = () => {
   const topics = [
     {
-      title: "Find Winning Products That Actually Sell",
+      title: "The “Winning Product” Secret",
       points: [
-        "Discover the secret formula.",
-        "Avoid common product mistakes.",
+        "Discover untapped 6-figure niches fast.",
+        "Use my 3-step formula to pick daily winners.",
       ],
     },
     {
-      title: "Build a Store That Converts Visitors into Buyers",
+      title: "Build a Store That Prints Sales",
       points: [
-        "Step-by-step Shopify setup.",
-        "Learn psychology behind design.",
+        "Copy my proven Shopify setup that converts.",
+        "Learn design tricks that make people click Buy Now.",
       ],
     },
     {
-      title: "Master Ads That Bring Real Sales (Not Just Clicks)",
+      title: "Master Ads That Bring Real Cash",
       points: [
-        "Understand how Facebook, Instagram & TikTok ads work.",
-        "Learn proven ad strategies & writing ad copies.",
+        "Unlock ad formulas for Facebook and others.",
+        "Write ad copies that make people pull out their cards.",
       ],
     },
     {
@@ -33,13 +33,16 @@ const Learn = () => {
     },
     {
       title: "Avoid the 5 Costly Mistakes Most Beginners Make",
-      points: ["Budget your first $100–$200 wisely.", "Avoid fake guru traps."],
+      points: [
+        "Budget your first price wisely.",
+        "Use my cheat codes to grow without wasting cash.",
+      ],
     },
     {
-      title: "Step-by-Step Roadmap to Launch Your First Store",
+      title: "Launch Your Store in 7 Days",
       points: [
         "Clear 7-day action plan.",
-        "Connect everything — checklist + kit.",
+        "Connect everything — checklist + templates ready to go live.",
       ],
     },
   ];
@@ -55,11 +58,12 @@ const Learn = () => {
     >
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-[#0B3C41] mb-2">
-          What You’ll Learn in This{" "}
+          What You’ll Learn Inside This{" "}
           <span className="text-green-600"> Dropshipping Webinar</span>
         </h2>
         <p className="text-[#0B3C41] text-base md:text-lg">
-          Unlock the Secrets to E-commerce Success.
+          Discover proven systems that turn beginners into profitable store
+          owners — fast.
         </p>
       </div>
 
@@ -77,7 +81,7 @@ const Learn = () => {
                 {topic.title}
               </h3>
             </div>
-            <ul className="list-disc font-semibold list-inside text-green-900  text-sm space-y-1">
+            <ul className="list-disc pl-5 font-semibold text-green-900 text-sm space-y-1">
               {topic.points.map((point, i) => (
                 <li key={i}>{point}</li>
               ))}
@@ -87,7 +91,7 @@ const Learn = () => {
       </div>
 
       <div className="text-center mt-12">
-        <button className="bg-[#0B3C41] text-white px-8 py-4 rounded-full font-semibold text-lg transition">
+        <button className="bg-emerald-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition animate-bounce">
           Claim Your Free Spot Now!
         </button>
       </div>

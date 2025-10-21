@@ -2,7 +2,10 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="bg-[#062E33] text-white flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-5 min-h-screen overflow-hidden">
+    <section
+      id="hero"
+      className="bg-[#062E33] text-white flex flex-col lg:flex-row items-center justify-between px-6 lg:px-20 py-5 min-h-screen overflow-hidden"
+    >
       {/* LEFT SIDE */}
       <div className="w-full lg:w-[55%] flex flex-col justify-center items-center lg:items-start text-center lg:text-left space-y-4">
         {/* HEADING */}

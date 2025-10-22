@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -21,6 +21,38 @@ import ThankYou from "./components/Thankyou";
 import PopupForm from "./components/PopupForm";
 
 const App = () => {
+  // ✅ Facebook Meta Pixel setup
+  useEffect(() => {
+    // Create and inject the script
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod
+          ? n.callMethod.apply(n, arguments)
+          : n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+
+    // Initialize your pixel ID
+    window.fbq("init", "1459056298504694");
+    window.fbq("track", "PageView");
+  }, []);
+
   return (
     <Router>
       <Routes>
@@ -37,21 +69,31 @@ const App = () => {
               <Stages />
               <Challenges />
               <Join />
-
               <Mentor />
-
               <FAQ />
               <Footer />
             </div>
           }
         />
-        ////workkk redirect
+
+        {/* ✅ Thank You Redirects */}
         <Route path="/thankyou" element={<ThankYou />} />
         <Route
           path="/congratulations"
           element={<Navigate to="/thankyou" replace />}
         />
       </Routes>
+
+      {/* ✅ NoScript fallback (for browsers with JS disabled) */}
+      <noscript>
+        <img
+          height="1"
+          width="1"
+          style={{ display: "none" }}
+          src="https://www.facebook.com/tr?id=1459056298504694&ev=PageView&noscript=1"
+          alt="fb pixel"
+        />
+      </noscript>
     </Router>
   );
 };

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
@@ -10,7 +10,6 @@ const TEXT_COLOR = "#FFFFFF";
 const RIBBON_TEXT_COLOR = "#333333";
 
 // --- STYLED COMPONENTS ---
-
 const ThankYouContainer = styled.div`
   width: 100%;
   min-height: 100vh;
@@ -122,9 +121,43 @@ const BackButton = styled.button`
 `;
 
 // --- COMPONENT LOGIC ---
-
 const ThankYou = () => {
   const navigate = useNavigate();
+
+  // ✅ Meta Pixel for tracking conversions
+  useEffect(() => {
+    // Inject Pixel Script if not already present
+    if (!window.fbq) {
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+
+      window.fbq("init", "1459056298504694");
+    }
+
+    window.fbq("track", "CompleteRegistration");
+    window.fbq("track", "Lead");
+  }, []);
 
   return (
     <ThankYouContainer>
@@ -147,6 +180,17 @@ const ThankYou = () => {
       </Ribbon>
 
       <BackButton onClick={() => navigate("/")}>← Back to Home</BackButton>
+
+      {/* ✅ Fallback for non-JS browsers */}
+      <noscript>
+        <img
+          height="1"
+          width="1"
+          style={{ display: "none" }}
+          src="https://www.facebook.com/tr?id=1459056298504694&ev=PageView&noscript=1"
+          alt="fb pixel"
+        />
+      </noscript>
     </ThankYouContainer>
   );
 };

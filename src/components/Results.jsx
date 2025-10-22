@@ -1,4 +1,5 @@
 import React from "react";
+import PopupForm from "./PopupForm";
 
 const Results = () => {
   const dashboards = [
@@ -60,9 +61,7 @@ const Results = () => {
       </div>
 
       <div className="text-center mt-12">
-        <button className="bg-emerald-700 text-gray-100 border-2 border-white px-8 py-4 rounded-full font-semibold text-lg transition animate-bounce">
-          Yes! I want Results
-        </button>
+        <PopupForm />
       </div>
     </section>
   );

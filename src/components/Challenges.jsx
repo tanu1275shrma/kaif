@@ -1,6 +1,7 @@
 // Challenges.jsx - Brighter Version
 
 import React from "react";
+import PopupForm from "./PopupForm";
 
 // Define the new, brighter colors
 const BRIGHT_RED = "#CC0033"; // Vibrant Coral Red
@@ -150,9 +151,7 @@ const Challenges = () => {
         </div>
       </div>
       <div className="text-center mt-12">
-        <button className="bg-red-700 text-gray-100 border-2 border-white px-8 py-4 rounded-full font-semibold text-lg transition animate-bounce">
-          Show me your Solutions!
-        </button>
+        <PopupForm />
       </div>
 
       {/* Tailwind animation configuration for the spin (optional but cool) */}

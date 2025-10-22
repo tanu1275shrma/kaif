@@ -41,13 +41,32 @@ const PopupForm = () => {
 
   return (
     <>
-      {/* 🔘 Enroll Button */}
+      {/* 🔘 Animated Enroll Button */}
       <button
         onClick={openPopup}
-        className="bg-gradient-to-r from-[#00A36C] to-[#062E33] text-white font-semibold px-8 py-3 rounded-xl hover:scale-105 transition-all duration-300 shadow-lg"
+        className="bg-gradient-to-r from-[#00A36C] to-[#045D4C] text-white font-semibold px-10 py-4 rounded-2xl shadow-[0_8px_20px_rgba(0,0,0,0.4)] hover:scale-110 transition-all duration-300 animate-bounce-slow"
       >
-        Enroll Now
+        Yes! I'm in for the Webinar
       </button>
+
+      <style>{`
+        /* 💫 Custom bounce animation */
+        @keyframes bounce-slow {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-8px);
+          }
+        }
+        .animate-bounce-slow {
+          animation: bounce-slow 2.2s infinite;
+        }
+        button:hover {
+          background: linear-gradient(90deg, #00B97C, #007855);
+          box-shadow: 0 0 25px rgba(0, 163, 108, 0.8);
+        }
+      `}</style>
 
       {/* 🪟 Popup Form */}
       {isOpen && (

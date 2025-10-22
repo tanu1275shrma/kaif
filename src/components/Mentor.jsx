@@ -1,4 +1,5 @@
 import React from "react";
+import PopupForm from "./PopupForm";
 
 const Mentor = () => {
   return (
@@ -54,9 +55,7 @@ const Mentor = () => {
           </p>
 
           <div className="text-center mt-12">
-            <button className="bg-gray-100 border-2 border-emerald-900  text-emerald-700 px-8 py-4 rounded-full font-semibold text-lg transition animate-bounce">
-              Let's Connect Now!
-            </button>
+            <PopupForm />
           </div>
         </div>
       </div>

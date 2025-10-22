@@ -1,4 +1,5 @@
 import React from "react";
+import PopupForm from "./PopupForm";
 
 const Join = () => {
   const points = [
@@ -75,9 +76,7 @@ const Join = () => {
         </div>
       </div>
       <div className="text-center mt-12">
-        <button className="bg-yellow-500 text-emerald-900 border-2 border-white px-8 py-4 rounded-full font-semibold text-lg transition animate-bounce">
-          This is Absolutely for Me!
-        </button>
+        <PopupForm />
       </div>
     </section>
   );

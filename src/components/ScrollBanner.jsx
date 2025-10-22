@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import PopupForm from "./PopupForm";
 
 const ScrollBanner = () => {
   const [visible, setVisible] = useState(false);
@@ -75,10 +76,7 @@ const ScrollBanner = () => {
               </span>
             </div>
 
-            {/* CTA Button */}
-            <button className="bg-white text-emerald-800 text-[10px] sm:text-[11px] md:text-sm font-semibold rounded-full px-4 sm:px-5 py-1.5 sm:py-2 transition-all duration-300 shadow-md hover:bg-gray-100 whitespace-nowrap">
-              CLAIM YOUR SPOT NOW
-            </button>
+            <PopupForm />
           </div>
         </div>
       </div>

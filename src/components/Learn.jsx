@@ -1,5 +1,6 @@
 import React from "react";
 import { CheckCircle } from "lucide-react";
+import PopupForm from "./PopupForm";
 
 const Learn = () => {
   const topics = [
@@ -91,9 +92,7 @@ const Learn = () => {
       </div>
 
       <div className="text-center mt-12">
-        <button className="bg-emerald-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition animate-bounce">
-          Enroll Now!
-        </button>
+        <PopupForm />
       </div>
     </section>
   );

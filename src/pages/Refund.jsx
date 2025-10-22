@@ -36,17 +36,16 @@ const Refund = () => {
           <p>
             <strong>How to Request:</strong> Contact us at{" "}
             <a
-              href="mailto:support@waghsiredupro.in"
+              href="mailto:support@skillsfavour.com"
               className="font-bold text-yellow-400 hover:underline"
             >
-              support@waghsiredupro.in
+              support@skillsfavour.com
             </a>{" "}
-            or{" "}
-            <span className="font-bold text-yellow-400">+91 89837 49765</span>.
+            or <span className="font-bold text-yellow-400">+91 9997919492</span>
           </p>
 
           <p>
-            <strong>Final Decision:</strong> The management of Waghsir EduPro
+            <strong>Final Decision:</strong> The management of Skills Favour
             holds the final authority on all refund and cancellation decisions.
           </p>
         </div>

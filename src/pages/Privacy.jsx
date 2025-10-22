@@ -36,13 +36,13 @@ const PrivacyPolicy = () => {
             <strong>Contact Us:</strong> For any questions regarding privacy
             practices, reach us at{" "}
             <a
-              href="mailto:support@waghsiredupro.in"
+              href="mailto:support@skillsfavour.com"
               className="font-bold text-yellow-400 hover:underline"
             >
-              support@waghsiredupro.in
+              support@skillsfavour.com
             </a>{" "}
             or{" "}
-            <span className="font-bold text-yellow-400">+91 89837 49765</span>.
+            <span className="font-bold text-yellow-400">+91 9997919492 </span>.
           </p>
         </div>
       </div>

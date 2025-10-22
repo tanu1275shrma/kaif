@@ -20,14 +20,13 @@ const ShippingPolicy = () => {
             <strong>Issues & Assistance:</strong> For lost, damaged, or other
             shipping issues, contact us promptly at{" "}
             <a
-              href="mailto:support@waghsiredupro.in"
+              href="mailto:support@skillsfavour.com"
               className="font-bold text-yellow-400 hover:underline"
             >
-              support@waghsiredupro.in
+              support@skillsfavour.com
             </a>{" "}
-            or{" "}
-            <span className="font-bold text-yellow-400">+91 89837 49765</span>,
-            and we will assist you.
+            or <span className="font-bold text-yellow-400">+91 9997919492</span>
+            , and we will assist you.
           </p>
         </div>
       </div>

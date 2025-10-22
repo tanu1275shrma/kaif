@@ -24,6 +24,7 @@ import Privacy from "./pages/Privacy";
 import Refund from "./pages/Refund";
 import Shipping from "./pages/Shipping";
 import Contact from "./pages/Contact";
+//nooo addded
 
 const App = () => {
   // ✅ Facebook Meta Pixel setup

@@ -46,13 +46,13 @@ const Terms = () => {
           <p>
             <strong>Contact:</strong> For queries, reach us at{" "}
             <a
-              href="mailto:support@waghsiredupro.in"
+              href="mailto:support@skillsfavour.com"
               className="font-bold text-yellow-400 hover:underline"
             >
-              support@waghsiredupro.in
+              support@skillsfavour.com
             </a>{" "}
-            or{" "}
-            <span className="font-bold text-yellow-400">+91 89837 49765</span>.
+            or <span className="font-bold text-yellow-400">+91 9997919492</span>
+            .
           </p>
         </div>
       </div>

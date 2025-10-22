@@ -3,9 +3,9 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 
 // --- COLOR DEFINITIONS ---
-const START_COLOR = "#062E33"; // Deep Emerald Green
-const END_COLOR = "#00A36C"; // Brighter Emerald Green
-const ACCENT_YELLOW = "#FFD700"; // Bright Gold
+const START_COLOR = "#062E33";
+const END_COLOR = "#00A36C";
+const ACCENT_YELLOW = "#FFD700";
 const TEXT_COLOR = "#FFFFFF";
 const RIBBON_TEXT_COLOR = "#333333";
 
@@ -124,7 +124,7 @@ const BackButton = styled.button`
 const ThankYou = () => {
   const navigate = useNavigate();
 
-  // ✅ Meta Pixel for tracking conversions
+  // ✅ Meta Pixel — ONLY CompleteRegistration event
   useEffect(() => {
     // Inject Pixel Script if not already present
     if (!window.fbq) {
@@ -155,8 +155,8 @@ const ThankYou = () => {
       window.fbq("init", "1459056298504694");
     }
 
+    // ✅ Only fire CompleteRegistration
     window.fbq("track", "CompleteRegistration");
-    window.fbq("track", "Lead");
   }, []);
 
   return (
@@ -187,7 +187,7 @@ const ThankYou = () => {
           height="1"
           width="1"
           style={{ display: "none" }}
-          src="https://www.facebook.com/tr?id=1459056298504694&ev=PageView&noscript=1"
+          src="https://www.facebook.com/tr?id=1459056298504694&ev=CompleteRegistration&noscript=1"
           alt="fb pixel"
         />
       </noscript>

@@ -19,6 +19,11 @@ import Challenges from "./components/Challenges";
 import Join from "./components/Join";
 import ThankYou from "./components/Thankyou";
 import PopupForm from "./components/PopupForm";
+import Terms from "./pages/Terms";
+import Privacy from "./pages/Privacy";
+import Refund from "./pages/Refund";
+import Shipping from "./pages/Shipping";
+import Contact from "./pages/Contact";
 
 const App = () => {
   // ✅ Facebook Meta Pixel setup
@@ -82,6 +87,13 @@ const App = () => {
           path="/congratulations"
           element={<Navigate to="/thankyou" replace />}
         />
+
+        {/* 🧾 Footer Policy Pages */}
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/refund" element={<Refund />} />
+        <Route path="/shipping" element={<Shipping />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
 
       {/* ✅ NoScript fallback (for browsers with JS disabled) */}

@@ -1,4 +1,5 @@
 import React from "react";
+import PopupForm from "./PopupForm";
 
 const Hero = () => {
   return (
@@ -89,10 +90,7 @@ const Hero = () => {
           Businesses
         </p>
 
-        {/* CTA BUTTON */}
-        <button className="mt-6 bg-yellow-400 text-[#062E33] font-semibold text-base md:text-lg py-3 px-10 md:px-12 rounded-xl shadow-lg hover:bg-yellow-500 transition-all duration-300 animate-bounce">
-          ⚡ Yes! I’m Ready to Start My Dropshipping Journey Now!
-        </button>
+        <PopupForm />
       </div>
     </section>
   );

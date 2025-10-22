@@ -3,22 +3,15 @@ import { XCircle, CheckCircle } from "lucide-react";
 
 const Regret = () => {
   return (
-    <section
-      className="relative w-full min-h-screen flex justify-center items-center bg-emerald-50 overflow-hidden px-4 py-8 sm:px-6 md:px-8"
-      style={{
-        backgroundImage: "url('/images/bgpista.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <section className="relative bg-[#062E33] w-full min-h-screen flex justify-center items-center  overflow-hidden px-4 py-8 sm:px-6 md:px-8">
       {/* Background Gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-emerald-200 via-white to-emerald-200"></div>
+      <div className="absolute inset-0 bg-[#062E33]"></div>
 
       {/* Glassmorphism Box */}
-      <div className="relative w-full max-w-6xl backdrop-blur-xl bg-white/40 border border-emerald-300 rounded-3xl shadow-lg p-5 sm:p-6 md:p-8 z-10 flex flex-col justify-between min-h-[85vh]">
+      <div className="relative w-full max-w-6xl backdrop-blur-xl  border border-emerald-300 rounded-3xl shadow-lg p-5 sm:p-6 md:p-8 z-10 flex flex-col justify-between min-h-[85vh]">
         {/* Heading */}
         <div className="text-center mb-6">
-          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-emerald-700 leading-snug">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-100 leading-snug">
             ⚠️ Don’t Let This Be Your “I Wish I Started Sooner” Moment!
           </h2>
         </div>
@@ -115,11 +108,11 @@ const Regret = () => {
 
         {/* CTA */}
         <div className="text-center mt-6 sm:mt-8">
-          <p className="text-[#0B3C41] text-sm sm:text-base md:text-lg mb-3 leading-relaxed">
+          <p className="text-gray-100 text-sm sm:text-base md:text-lg mb-3 leading-relaxed">
             ⚡ Spots are filling up fast — This isn’t just another webinar. It’s
             your chance to finally stop guessing and start building something
             real.{" "}
-            <span className="font-semibold text-emerald-700">
+            <span className="font-semibold text-gray-100">
               👉 Enroll now and make your “someday” happen today.
             </span>
           </p>

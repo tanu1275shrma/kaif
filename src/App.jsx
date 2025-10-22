@@ -45,7 +45,7 @@ const App = () => {
             </div>
           }
         />
-
+        ////workkk redirect
         <Route path="/thankyou" element={<ThankYou />} />
         <Route
           path="/congratulations"

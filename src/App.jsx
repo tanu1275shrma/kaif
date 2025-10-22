@@ -1,5 +1,11 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+
 import Hero from "./components/Hero";
 import Stages from "./components/Stages";
 import Learn from "./components/Learn";
@@ -40,8 +46,11 @@ const App = () => {
           }
         />
 
-        {/* 🙌 Thank You Page */}
         <Route path="/thankyou" element={<ThankYou />} />
+        <Route
+          path="/congratulations"
+          element={<Navigate to="/thankyou" replace />}
+        />
       </Routes>
     </Router>
   );

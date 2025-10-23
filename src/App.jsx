@@ -24,6 +24,8 @@ import Privacy from "./pages/Privacy";
 import Refund from "./pages/Refund";
 import Shipping from "./pages/Shipping";
 import Contact from "./pages/Contact";
+import Error500 from "./pages/Error500";
+
 //nooo addded
 
 const App = () => {
@@ -95,6 +97,8 @@ const App = () => {
         <Route path="/refund" element={<Refund />} />
         <Route path="/shipping" element={<Shipping />} />
         <Route path="/contact" element={<Contact />} />
+
+        <Route path="/500" element={<Error500 />} />
       </Routes>
 
       {/* ✅ NoScript fallback (for browsers with JS disabled) */}

@@ -60,6 +60,31 @@ const Results = () => {
         ))}
       </div>
 
+      {/* ✅ Horizontal Money-back Guarantee Card */}
+      <div className="mt-16 flex justify-center">
+        <div className="bg-[#0B3C41] text-white rounded-3xl p-6 md:p-10 flex flex-col md:flex-row items-center gap-6 max-w-5xl w-full shadow-2xl transition-transform hover:scale-[1.02] duration-300">
+          <img
+            src="/images/logo.png"
+            alt="100% Money-back Guarantee"
+            className="w-28 md:w-36 flex-shrink-0"
+          />
+          <div className="text-center md:text-left">
+            <h3 className="text-2xl md:text-3xl font-bold mb-3 text-yellow-500">
+              100% Money-back Guarantee
+            </h3>
+            <p className="text-gray-100 text-sm md:text-base mb-3 leading-relaxed">
+              Not completely satisfied after Day 1? Get a full refund, no
+              questions asked. We're confident you'll see the massive
+              opportunity within the first hour.
+            </p>
+            <p className="italic text-green-300 font-semibold text-sm md:text-base">
+              "Your success is our reputation. We stand behind every promise
+              made."
+            </p>
+          </div>
+        </div>
+      </div>
+
       <div className="text-center mt-12">
         <PopupForm />
       </div>

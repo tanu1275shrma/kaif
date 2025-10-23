@@ -68,6 +68,7 @@ const Learn = () => {
         </p>
       </div>
 
+      {/* Topics Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {topics.map((topic, index) => (
           <div
@@ -91,6 +92,7 @@ const Learn = () => {
         ))}
       </div>
 
+      {/* CTA Button */}
       <div className="text-center mt-12">
         <PopupForm />
       </div>

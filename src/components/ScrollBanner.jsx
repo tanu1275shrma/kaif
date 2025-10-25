@@ -63,19 +63,6 @@ const ScrollBanner = () => {
 
           {/* RIGHT SECTION */}
           <div className="w-full sm:w-[45%] flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 mt-2 sm:mt-0">
-            {/* Circular Price Tag */}
-            <div className="bg-white text-[#062E33] border border-emerald-900 rounded-full w-16 h-16 sm:w-20 sm:h-20 flex flex-col items-center justify-center shadow-md">
-              <span className="line-through text-black font-semibold text-[9px] sm:text-[10px]">
-                ₹2999
-              </span>
-              <h3 className="text-base sm:text-lg font-extrabold text-red-700">
-                ₹49
-              </h3>
-              <span className="text-[8px] sm:text-[10px] font-semibold">
-                ONLY!
-              </span>
-            </div>
-
             <PopupForm />
           </div>
         </div>

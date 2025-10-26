@@ -48,7 +48,7 @@ const Hero = () => {
         {/* DETAILS — 2x2 GRID */}
         <div className="mt-2 grid grid-cols-2 gap-4 w-full max-w-xs sm:max-w-md md:max-w-lg place-items-center">
           {[
-            { label: "DATE", value: "20th Oct" },
+            { label: "DATE", value: "31th Oct" },
             { label: "TIME", value: "8:00 PM" },
             { label: "PLATFORM", value: "Zoom" },
             { label: "LANGUAGE", value: "English | Hindi" },
